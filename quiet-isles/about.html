@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>关于 · 静屿 QUIET ISLES</title>
+<meta name="description" content="静屿是一个纯前端的治愈系小场景网站：手写软 3D、程序化音景、零外部依赖、进度只存在本机。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="p-site" data-page="about">
+<div id="boot"><div><div class="k">QUIET ISLES<br>静屿</div><div class="c"></div></div></div>
+<header class="nav">
+  <div class="in">
+    <a class="brand" href="index.html">
+      <span class="mk">◍</span>
+      <span class="tx"><b>静屿</b><small>QUIET ISLES</small></span>
+    </a>
+    <nav class="links">
+      <a href="index.html" data-nav="index.html">首页</a>
+      <a href="scenes.html" data-nav="scenes.html">场景</a>
+      <a href="journal.html" data-nav="journal.html">生命图鉴</a>
+      <a href="about.html" data-nav="about.html">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="kicker">ABOUT</div>
+  <h1>关于静屿</h1>
+  <p class="pd">静屿是一个纯前端的小网站 —— 没有后台、没有账号、没有广告、也不会推送任何东西。
+    打开就是一整个世界，关掉它就安静地待在那儿。</p>
+  <div class="statrow">
+    <div class="stat"><b>9</b><span>个场景</span></div>
+    <div class="stat"><b>0</b><span>个外部依赖</span></div>
+    <div class="stat"><b data-stat="pets"></b><span>已记录小居民</span></div>
+  </div>
+</main>
+
+<section class="sec">
+  <div class="sec-h">
+    <div class="kicker">UNDER THE HOOD</div>
+    <h2>它是怎么做出来的</h2>
+    <p>整个网站没有一个 3D 库、没有一张贴图、也没有一个音频文件。</p>
+  </div>
+  <div class="feats">
+    <div class="feat"><div class="ic">△</div><h3>手写的软 3D</h3>
+      <p>所有场景都是几百个平面多边形，用 Canvas 2D 一个一个算出来再着色。所以它很轻，手机也能跑。</p></div>
+    <div class="feat"><div class="ic">≈</div><h3>声音是算出来的</h3>
+      <p>海浪是一段被滤波的白噪声加一个慢波，虫鸣是一条方波在调制带通滤波。全部实时合成。</p></div>
+    <div class="feat"><div class="ic">◻</div><h3>九个独立页面</h3>
+      <p>每个场景都是自己的一页，共用同一套引擎和音景。改一个场景不会影响别的场景。</p></div>
+    <div class="feat"><div class="ic">⌂</div><h3>进度只在本机</h3>
+      <p>你记下的图鉴和完成的小任务，都藏在浏览器的 localStorage 里。清缓存就清零 —— 本来就是玩玩的。</p></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-h">
+    <div class="kicker">THE NINE</div>
+    <h2>九个场景</h2>
+    <p>按顺序是这么排的。</p>
+  </div>
+  <div class="wall" style="grid-template-columns:repeat(auto-fill,minmax(170px,1fr))">
+      <a class="tile" href="scene-tidal.html" style="--accent:#4BA8B8"><div class="tmeta" style="padding:16px 16px 18px"><span class="tno">01</span><span class="tcn">潮汐之庭</span><span class="ten">TIDAL GARDEN</span></div></a>
+      <a class="tile" href="scene-isle.html" style="--accent:#E2884F"><div class="tmeta" style="padding:16px 16px 18px"><span class="tno">02</span><span class="tcn">暖屿</span><span class="ten">SUNLIT ISLE</span></div></a>
+      <a class="tile" href="scene-grove.html" style="--accent:#5FA96A"><div class="tmeta" style="padding:16px 16px 18px"><span class="tno">03</span><span class="tcn">苔林微光</span><span class="ten">MOSSY GROVE</span></div></a>
+      <a class="tile" href="scene-snow.html" style="--accent:#7D9CB8"><div class="tmeta" style="padding:16px 16px 18px"><span class="tno">04</span><span class="tcn">雪见小屋</span><span class="ten">SNOWLIGHT CABIN</span></div></a>
+      <a class="tile" href="scene-pond.html" style="--accent:#6E7FC4"><div class="tmeta" style="padding:16px 16px 18px"><span class="tno">05</span><span class="tcn">星沉小池</span><span class="ten">STARFALL POND</span></div></a>
+      <a class="tile" href="scene-terrace.html" style="--accent:#8FB46A"><div class="tmeta" style="padding:16px 16px 18px"><span class="tno">06</span><span class="tcn">云上梯田</span><span class="ten">CLOUD TERRACE</span></div></a>
+      <a class="tile" href="scene-oasis.html" style="--accent:#D9A05B"><div class="tmeta" style="padding:16px 16px 18px"><span class="tno">07</span><span class="tcn">沙漠绿洲</span><span class="ten">OASIS DUSK</span></div></a>
+      <a class="tile" href="scene-bamboo.html" style="--accent:#7BAE5E"><div class="tmeta" style="padding:16px 16px 18px"><span class="tno">08</span><span class="tcn">竹海小径</span><span class="ten">BAMBOO PATH</span></div></a>
+      <a class="tile" href="scene-roof.html" style="--accent:#DFA066"><div class="tmeta" style="padding:16px 16px 18px"><span class="tno">09</span><span class="tcn">雨夜天台</span><span class="ten">RAINY ROOFTOP</span></div></a>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="ctabox">
+    <div>
+      <h2>好了，去待一会儿吧。</h2>
+      <p>建议戴耳机。</p>
+    </div>
+    <div class="cact"><a class="btn light" href="scenes.html">进入场景总览</a></div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div>静屿 QUIET ISLES · 九个不催你的小世界</div>
+  <div class="fl">
+    <a href="scenes.html">场景总览</a>
+    <a href="journal.html">生命图鉴</a>
+    <a href="about.html">关于</a>
+  </div>
+  <div>音景由浏览器实时合成 · 无需下载 · 进度存在本机</div>
+</footer>
+<script src="assets/engine.js"></script>
+<script src="assets/audio.js"></script>
+<script src="assets/scenes.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

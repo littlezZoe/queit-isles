@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>生命图鉴 · 静屿 QUIET ISLES</title>
+<meta name="description" content="静屿的生命图鉴：记录你在九个场景里遇到的每一只小居民。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="p-site" data-page="journal">
+<div id="boot"><div><div class="k">QUIET ISLES<br>静屿</div><div class="c"></div></div></div>
+<header class="nav">
+  <div class="in">
+    <a class="brand" href="index.html">
+      <span class="mk">◍</span>
+      <span class="tx"><b>静屿</b><small>QUIET ISLES</small></span>
+    </a>
+    <nav class="links">
+      <a href="index.html" data-nav="index.html">首页</a>
+      <a href="scenes.html" data-nav="scenes.html">场景</a>
+      <a href="journal.html" data-nav="journal.html">生命图鉴</a>
+      <a href="about.html" data-nav="about.html">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="kicker">LIFE JOURNAL</div>
+  <h1>生命图鉴</h1>
+  <p class="pd">每个场景里都住着几只小东西。看到会动的、会眨眼的那种，轻轻点一下它，
+    就会被记进这里。没找到的会显示成「？？？」，不着急，慢慢来。</p>
+  <div class="statrow">
+    <div class="stat"><b data-stat="pets"></b><span>已记录</span></div>
+    <div class="stat"><b>9</b><span>个场景</span></div>
+    <div class="stat"><b data-stat="tasks"></b><span>已完成小任务</span></div>
+  </div>
+</main>
+
+<section class="sec" style="padding-top:clamp(24px,3vw,40px)">
+  <div class="chips" id="jfilter"></div>
+  <div class="jstat" id="j-stat"></div>
+  <div class="jgrid jgrid2" id="jgrid"></div>
+  <div class="emptybox" id="j-empty">
+    图鉴还是空的。随便进一个场景，点一下会动的小家伙 —— 它就会出现在这里。
+    <div style="margin-top:16px"><a class="btn dark" href="scenes.html">去场景总览</a></div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div>静屿 QUIET ISLES · 九个不催你的小世界</div>
+  <div class="fl">
+    <a href="scenes.html">场景总览</a>
+    <a href="journal.html">生命图鉴</a>
+    <a href="about.html">关于</a>
+  </div>
+  <div>音景由浏览器实时合成 · 无需下载 · 进度存在本机</div>
+</footer>
+<script src="assets/engine.js"></script>
+<script src="assets/audio.js"></script>
+<script src="assets/scenes.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
