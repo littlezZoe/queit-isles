@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>09 雨夜天台 · RAINY ROOFTOP — 静屿 QUIET ISLES</title>
+<meta name="description" content="雨夜天台 RAINY ROOFTOP —— 城市在楼下亮着，雨落在天台的砖上。挂一串灯吧，雨里有灯就没那么冷了。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="p-play" data-page="player" data-scene="roof">
+<div id="boot"><div><div class="k">QUIET ISLES<br>静屿</div><div class="c"></div></div></div>
+
+<div id="stage">
+  <canvas id="cv"></canvas>
+  <div class="vig"></div>
+
+  <div class="topbar">
+    <a class="backbtn" href="scenes.html">← 回到场景列表</a>
+    <div class="scenelabel">
+      <div class="k" id="sl-k">09 / RAINY ROOFTOP</div>
+      <div class="n"><span id="sl-n">雨夜天台</span><small id="sl-s">Lights strung up against the rain</small></div>
+    </div>
+    <div class="tools">
+      <button class="tool" id="btnDay" title="白天 / 夜晚"><span id="icoDay">🌙</span></button>
+      <button class="tool" id="btnOrbit" title="自动旋转"><span>⟳</span></button>
+      <button class="tool" id="btnSound" title="音景开关"><span id="icoSound">🔈</span></button>
+      <button class="tool" id="btnBook" title="快速看图鉴"><span>🐾</span></button>
+      <a class="tool" href="journal.html" title="打开完整图鉴"><span>📖</span></a>
+      <button class="tool" id="btnReset" title="复位视角（R）"><span>⤾</span></button>
+    </div>
+  </div>
+
+  <div class="hint" id="hint">拖拽旋转 · 滚轮缩放 · 点一下小东西试试</div>
+
+  <a class="corner l" id="btnPrev" href="scene-bamboo.html" title="上一个：竹海小径">←</a>
+  <a class="corner r" id="btnNext" href="scene-tidal.html" title="下一个：潮汐之庭">→</a>
+
+  <div class="petcard" id="petcard">
+    <div class="k" id="pc-k">MEET THE LOCALS</div>
+    <div class="n"><span id="pc-n">寄居蟹</span><small id="pc-e">Hermit Crab</small></div>
+    <div class="d" id="pc-d"></div>
+    <div class="b" id="pc-b"><span>✓</span><span>已记进生命图鉴</span></div>
+  </div>
+
+  <div class="taskbar" id="taskbar">
+    <span class="dot"></span>
+    <span class="txt"><span id="tk-t">正在做一件小事</span><small id="tk-s"></small></span>
+    <span class="bar"><i id="tk-b"></i></span>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <div class="sheet" id="journal">
+    <div class="hd">
+      <div class="t"><small>LIFE JOURNAL</small>生命图鉴 <span class="sc" id="j-sc"></span></div>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <a class="backbtn" href="journal.html">完整图鉴 →</a>
+        <button class="backbtn" id="btnBookClose">收起 ✕</button>
+      </div>
+    </div>
+    <div class="bd">
+      <p class="scenedesc" id="scene-desc"></p>
+      <div class="jgrid" id="jgrid"></div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/engine.js"></script>
+<script src="assets/audio.js"></script>
+<script src="assets/scenes.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
